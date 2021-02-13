@@ -2,7 +2,7 @@
 
 tfvar:
   region: us-west1
-  credentials: Documents/keys/gcp-admin.json
+  credentials: /root/Documents/keys/gcp-admin.json
   project: brim-{{ app }}-{{ env }}
   bucket: brim-terraform-state-files
   vpc:
