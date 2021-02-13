@@ -1,0 +1,4 @@
+---
+
+region: us-west1
+credentials_file: /keys/gcp-admin.json
