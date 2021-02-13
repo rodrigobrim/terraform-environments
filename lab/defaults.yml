@@ -8,3 +8,7 @@ repositories:
     provider: github.com
     user: rodrigobrim
     repo: terraform-lab-vpc.git
+  gke:
+    provider: github.com
+    user: rodrigobrim
+    repo: terraform-lab-gke.git
