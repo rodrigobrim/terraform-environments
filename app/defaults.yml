@@ -21,10 +21,12 @@ tfvar:
 
 repositories:
   - name: vpc
+    state: present
     provider: github.com
     user: rodrigobrim
     repo: terraform-lab-vpc
   - name: gke
+    state: present
     provider: github.com
     user: rodrigobrim
     repo: terraform-lab-gke
