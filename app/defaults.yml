@@ -26,7 +26,7 @@ repositories:
     user: rodrigobrim
     repo: terraform-lab-vpc
   - name: gke
-    state: present
+    state: absent
     provider: github.com
     user: rodrigobrim
     repo: terraform-lab-gke
