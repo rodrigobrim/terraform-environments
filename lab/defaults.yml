@@ -2,3 +2,9 @@
 
 region: us-west1
 credentials_file: /keys/gcp-admin.json
+
+repositories:
+  vpc:
+    provider: github.com
+    user: rodrigobrim
+    repo: terraform-lab-vpc.git
