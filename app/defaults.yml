@@ -6,7 +6,7 @@ tfvar:
   project: brim-{{ app }}-{{ env }}
   bucket: brim-terraform-state-files
   vpc:
-    ip_cidr_range: 10.10.0.0/0
+    ip_cidr_range: 10.10.0.0/24
   gke:
     initial_node_count: 1
     node_count: 2
