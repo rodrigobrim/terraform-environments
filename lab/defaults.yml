@@ -1,7 +1,12 @@
 ---
 
-region: us-west1
-credentials_file: /keys/gcp-admin.json
+tfvar:
+  region: us-west1
+  credentials: /keys/gcp-admin.json
+  project: brim-{{ app }}-{{ env }}
+  ip_cidr_range: 10.10.0.0/0
+  bucket: brim-terraform-state-files
+
 
 repositories:
   - name: vpc
