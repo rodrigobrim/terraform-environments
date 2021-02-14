@@ -16,6 +16,6 @@ inventory:
       repo: terraform-lab-vpc
       resource_name: google_compute_network
       subnets:
-        google_compute_subnetwork:
+        subnet1:
           ip_cidr_range: 10.10.0.0/24
           name: google_compute_subnetwork
