@@ -1,0 +1,14 @@
+---
+
+app-example-1:
+  resources:
+    gke:
+      state: present
+      provider: github.com
+      user: rodrigobrim
+      repo: terraform-lab-gke
+      initial_node_count: 1
+      node_count: 2
+      username: rodrigobrim
+      password: Strong password!
+      machine_type: n1-standard-1
