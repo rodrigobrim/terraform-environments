@@ -1,6 +1,6 @@
 ---
 
-project_a:
+inventory:
   backend:
     region: us-west1
     credentials: /root/Documents/keys/gcp-admin.json
