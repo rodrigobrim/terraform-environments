@@ -12,4 +12,7 @@ app-example-1:
       username: rodrigobrim
       password: Strong password!
       machine_type: n1-standard-1
-      autoscaling: true
+      autoscaling:
+        max_node_count: 6
+        min_node_count: 2
+      location: "{{ inventory.backend.region }}-a"
