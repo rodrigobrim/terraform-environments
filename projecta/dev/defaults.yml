@@ -5,6 +5,7 @@ inventory:
     region: us-west1
     credentials: /root/Documents/keys/gcp-admin.json
     project: "{{ project }}-{{ env }}"
+    project_id: "{{ project }}-{{ env }}-304814"
     bucket: brim-terraform-state-files
 
   resources:
