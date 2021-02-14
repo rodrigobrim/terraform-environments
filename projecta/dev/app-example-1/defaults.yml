@@ -3,7 +3,7 @@
 app-example-1:
   resources:
     gke:
-      state: present
+      state: absent
       provider: github.com
       user: rodrigobrim
       repo: terraform-lab-gke
@@ -12,3 +12,4 @@ app-example-1:
       username: rodrigobrim
       password: Strong password!
       machine_type: n1-standard-1
+      autoscaling: true
