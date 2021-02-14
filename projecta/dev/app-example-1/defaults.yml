@@ -15,4 +15,4 @@ app-example-1:
       autoscaling:
         max_node_count: 6
         min_node_count: 2
-      location: "{{ inventory.backend.region }}-a"
+      location: "us-west1-a"
