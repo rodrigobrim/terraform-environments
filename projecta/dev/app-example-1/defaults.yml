@@ -22,7 +22,9 @@ app-example-1:
       tag: 0.0.1
       provider: docker.io
       user: rodrigobrim
-      expose: yes
+      expose:
+        port: 80
+        target_port: 8080
     todo-backend:
       state: present
       tag: 0.0.1
