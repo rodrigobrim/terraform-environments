@@ -3,7 +3,7 @@
 app-example-1:
   resources:
     gke:
-      state: absent
+      state: present
       scm_provider: github.com
       user: rodrigobrim
       repo: terraform-lab-gke
@@ -18,7 +18,7 @@ app-example-1:
       location: "us-east1-a"
   pods:
     todo-frontend:
-      state: absent
+      state: present
       scm_provider: github.com
       scm_user: rodrigobrim
       repo: pod-deployments-templates
@@ -33,7 +33,7 @@ app-example-1:
         - name: BACKEND_HOST
           value: todo-backend
     todo-backend:
-      state: absent
+      state: present
       scm_provider: github.com
       scm_user: rodrigobrim
       repo: pod-deployments-templates
