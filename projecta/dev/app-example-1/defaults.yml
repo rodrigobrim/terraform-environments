@@ -3,7 +3,7 @@
 app-example-1:
   resources:
     gke:
-      state: absent
+      state: present
       provider: github.com
       user: rodrigobrim
       repo: terraform-lab-gke
