@@ -16,3 +16,12 @@ app-example-1:
         max_node_count: 6
         min_node_count: 2
       location: "us-west1-a"
+  pods:
+    todo-frontend:
+      tag: 0.0.1
+      provider: docker.io
+      user: rodrigobrim
+    todo-backend:
+      tag: 0.0.1
+      provider: docker.io
+      user: rodrigobrim
