@@ -2,7 +2,7 @@
 
 inventory:
   backend:
-    region: us-west1
+    region: us-east1
     credentials: /root/Documents/keys/gcp-admin.json
     project: "{{ project }}-{{ env }}"
     project_id: "{{ project }}-{{ env }}"
@@ -12,10 +12,10 @@ inventory:
     vpc:
       state: present
       scm_provider: github.com
-      user: rodrigobrim
+      scm_user: rodrigobrim
       repo: terraform-lab-vpc
       resource_name: google_compute_network
       subnets:
-        google_compute_subnetwork:
-          ip_cidr_range: 10.10.0.0/24
+        subnet1:
+          ip_cidr_range: 10.20.0.0/24
           name: google_compute_subnetwork

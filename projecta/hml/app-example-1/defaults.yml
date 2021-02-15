@@ -1,0 +1,46 @@
+---
+
+app-example-1:
+  resources:
+    gke:
+      state: absent
+      scm_provider: github.com
+      user: rodrigobrim
+      repo: terraform-lab-gke
+      initial_node_count: 1
+      node_count: 2
+      username: rodrigobrim
+      password: Strong password!
+      machine_type: n1-standard-1
+      autoscaling:
+        max_node_count: 6
+        min_node_count: 2
+      location: "us-east1-a"
+  pods:
+    todo-frontend:
+      state: absent
+      scm_provider: github.com
+      scm_user: rodrigobrim
+      repo: pod-deployments-templates
+      tag: 0.0.1
+      container_provider: docker.io
+      container_user: rodrigobrim
+      replicas: 2
+      expose:
+        port: 80
+        target_port: 8080
+      environment_vars:
+        - name: BACKEND_HOST
+          value: todo-backend
+    todo-backend:
+      state: absent
+      scm_provider: github.com
+      scm_user: rodrigobrim
+      repo: pod-deployments-templates
+      tag: 0.0.1
+      container_provider: docker.io
+      container_user: rodrigobrim
+      replicas: 1
+      expose:
+        port: 80
+        target_port: 8080
