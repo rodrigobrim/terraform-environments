@@ -18,10 +18,12 @@ app-example-1:
       location: "us-west1-a"
   pods:
     todo-frontend:
+      state: present
       tag: 0.0.1
       provider: docker.io
       user: rodrigobrim
     todo-backend:
+      state: present
       tag: 0.0.1
       provider: docker.io
       user: rodrigobrim
