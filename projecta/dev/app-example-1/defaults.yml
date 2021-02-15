@@ -38,3 +38,6 @@ app-example-1:
       container_provider: docker.io
       container_user: rodrigobrim
       replicas: 1
+      expose:
+        port: 80
+        target_port: 8080
