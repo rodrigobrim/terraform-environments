@@ -12,7 +12,7 @@ inventory:
     vpc:
       state: present
       scm_provider: github.com
-      user: rodrigobrim
+      scm_user: rodrigobrim
       repo: terraform-lab-vpc
       resource_name: google_compute_network
       subnets:
