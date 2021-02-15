@@ -29,6 +29,9 @@ app-example-1:
       expose:
         port: 80
         target_port: 8080
+      environment_vars:
+        - name: BACKEND_HOST
+          value: todo-backend
     todo-backend:
       state: present
       scm_provider: github.com
