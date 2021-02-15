@@ -10,7 +10,7 @@ inventory:
 
   resources:
     vpc:
-      state: present
+      state: absent
       scm_provider: github.com
       scm_user: rodrigobrim
       repo: terraform-lab-vpc
