@@ -4,7 +4,7 @@ app-example-1:
   resources:
     gke:
       state: present
-      provider: github.com
+      scm_provider: github.com
       user: rodrigobrim
       repo: terraform-lab-gke
       initial_node_count: 1
@@ -19,11 +19,11 @@ app-example-1:
   pods:
     todo-frontend:
       state: present
-      provider: github.com
+      scm_provider: github.com
       user: rodrigobrim
       repo: pod-deployments-templates
       tag: 0.0.1
-      provider: docker.io
+      container_provider: docker.io
       user: rodrigobrim
       replicas: 2
       expose:
@@ -31,10 +31,10 @@ app-example-1:
         target_port: 8080
     todo-backend:
       state: present
-      provider: github.com
+      scm_provider: github.com
       user: rodrigobrim
       repo: pod-deployments-templates
       tag: 0.0.1
-      provider: docker.io
+      container_provider: docker.io
       user: rodrigobrim
       replicas: 1
