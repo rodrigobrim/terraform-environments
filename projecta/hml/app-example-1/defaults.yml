@@ -15,7 +15,7 @@ app-example-1:
       autoscaling:
         max_node_count: 6
         min_node_count: 2
-      location: "us-east1-a"
+      location: "us-west1-a"
   pods:
     todo-frontend:
       state: present
