@@ -1,0 +1,21 @@
+---
+
+inventory:
+  backend:
+    region: us-central1
+    credentials: /root/Documents/keys/gcp-admin.json
+    project: "{{ project }}-{{ env }}"
+    project_id: "{{ project }}-{{ env }}"
+    bucket: brim-terraform-state-files
+
+  resources:
+    vpc:
+      state: present
+      scm_provider: github.com
+      scm_user: rodrigobrim
+      repo: terraform-lab-vpc
+      resource_name: google_compute_network
+      subnets:
+        subnet1:
+          ip_cidr_range: 10.30.0.0/24
+          name: google_compute_subnetwork
