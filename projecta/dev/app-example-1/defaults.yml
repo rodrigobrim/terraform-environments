@@ -20,11 +20,11 @@ app-example-1:
     todo-frontend:
       state: present
       scm_provider: github.com
-      user: rodrigobrim
+      scm_user: rodrigobrim
       repo: pod-deployments-templates
       tag: 0.0.1
       container_provider: docker.io
-      user: rodrigobrim
+      container_user: rodrigobrim
       replicas: 2
       expose:
         port: 80
@@ -32,9 +32,9 @@ app-example-1:
     todo-backend:
       state: present
       scm_provider: github.com
-      user: rodrigobrim
+      scm_user: rodrigobrim
       repo: pod-deployments-templates
       tag: 0.0.1
       container_provider: docker.io
-      user: rodrigobrim
+      container_user: rodrigobrim
       replicas: 1
