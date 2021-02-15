@@ -22,6 +22,7 @@ app-example-1:
       tag: 0.0.1
       provider: docker.io
       user: rodrigobrim
+      expose: yes
     todo-backend:
       state: present
       tag: 0.0.1
